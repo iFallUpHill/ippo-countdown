@@ -5,9 +5,9 @@ const fullConfig = resolveConfig(tailwindConfig);
 
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Starter Tailwind`,
-    description: `Gatsby starter styled with Tailwind`,
-    author: `@taylorbryant`,
+    title: `ippo design`,
+    description: `handmade customizable jewelry and more`,
+    author: `@ippo.earrings`,
   },
   plugins: [
     `gatsby-plugin-eslint`,
@@ -15,13 +15,13 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-tailwind`,
+        name: `ippo-countdown`,
         short_name: `starter`,
         start_url: `/`,
         background_color: fullConfig.theme.colors.white,
         theme_color: fullConfig.theme.colors.green["500"],
         display: `minimal-ui`,
-        icon: `src/images/tailwind-icon.png`,
+        icon: `src/images/ippo-icon.png`,
       },
     },
     {
@@ -37,5 +37,19 @@ module.exports = {
       },
     },
     `gatsby-plugin-offline`,
+    {
+      resolve: '@slixites/gatsby-plugin-google-fonts',
+      options: {
+        fonts: [
+          'Yusei Magic',
+        ],
+        display: 'swap',
+        preconnect: true,
+        attributes: {
+            rel: 'stylesheet preload prefetch',
+            as: 'style',
+        },
+      },
+    },
   ],
 };
