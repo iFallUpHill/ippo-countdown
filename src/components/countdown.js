@@ -22,29 +22,30 @@ function Countdown() {
     });
 
   return(
-    <div className="flex justify-center items-start text-white text-shadow mb-8">
-      <div className="flex flex-col mr-4 font-bold">
+    <div className="flex flex-wrap justify-center items-start text-white text-shadow mb-8">
+      <div className="flex flex-col ml-4 md:ml-0 mr-10 md:mr-4 font-bold">
         <h1 className="text-4xl sm:text-8xl">{timeLeft.days}</h1>
         <h4 className="text-xl">days</h4>
       </div>
-      <div className="mt-2 sm:mt-8">
+      <div className="mt-8 hidden md:block">
         <h1 className="text-2xl md:text-4xl">{`//`}</h1>
       </div>
       <div className="flex flex-col mx-4 font-bold">
         <h1 className="text-4xl sm:text-8xl">{timeLeft.hours}</h1>
         <h4 className="text-xl">hours</h4>
       </div>
-      <div className="mt-2 sm:mt-8">
+      <div className="mt-8 hidden md:block">
         <h1 className="text-2xl md:text-4xl">{`//`}</h1>
       </div>
-      <div className="flex flex-col mx-4 font-bold">
+      <div className="flex-break md:hidden"></div>
+      <div className="flex flex-col mt-6 md:mt-0 ml-4 md:mr-4 font-bold">
         <h1 className="text-4xl sm:text-8xl">{timeLeft.minutes}</h1>
         <h4 className="text-xl">minutes</h4>
       </div>
-      <div className="mt-2 sm:mt-8">
+      <div className="mt-8 hidden md:block">
         <h1 className="text-2xl md:text-4xl">{`//`}</h1>
       </div>
-      <div className="flex flex-col ml-4 font-bold">
+      <div className="flex flex-col mt-6 md:mt-0 ml-8 md:ml-4 mr-4 md:mr-0 font-bold">
         <h1 className="text-4xl sm:text-8xl">{timeLeft.seconds}</h1>
         <h4 className="text-xl">seconds</h4>
       </div>

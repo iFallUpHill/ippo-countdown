@@ -17,7 +17,7 @@ function IndexPage() {
       <section className="text-center">
         <img
           alt="ippo design logo"
-          className="block w-1/2 mx-auto mb-8"
+          className="block w-3/5 md:w-1/2 mx-auto mb-8"
           src={ippoLogoLarge}
         />
 

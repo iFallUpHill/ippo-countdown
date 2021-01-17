@@ -12,7 +12,7 @@ function Layout({ children }) {
         params={{
           "particles": {
             "number": {
-              "value": 160,
+              "value": 144,
               "density": {
                 "enable": false
               }
