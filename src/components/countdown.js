@@ -38,7 +38,7 @@ function Countdown() {
         <h1 className="text-2xl md:text-4xl">{`//`}</h1>
       </div>
       <div className="flex-break md:hidden"></div>
-      <div className="flex flex-col mt-6 md:mt-0 ml-4 md:mr-4 font-bold">
+      <div className="flex flex-col mt-6 md:mt-0 ml-4 sm:mr-8 md:mr-4 font-bold">
         <h1 className="text-4xl sm:text-8xl">{timeLeft.minutes}</h1>
         <h4 className="text-xl">minutes</h4>
       </div>

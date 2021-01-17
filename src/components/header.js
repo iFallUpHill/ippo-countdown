@@ -29,14 +29,14 @@ function Header() {
           <a href="https://www.etsy.com/shop/ippoearrings/"
             target="_blank"
             rel="noopener noreferrer"
-            className="no-underline mr-2 p-2 bg-white bg-opacity-25 rounded-full shadow-sm">
-            <FaEtsy />
+            className="no-underline p-2">
+            <FaEtsy className="icon-shadow" />
           </a>
           <a href="https://www.instagram.com/ippo.earrings/"
             target="_blank"
             rel="noopener noreferrer"
-            className="no-underline p-2 bg-white bg-opacity-25 rounded-full shadow-sm">
-            <FaInstagram />
+            className="no-underline p-2">
+            <FaInstagram className="icon-shadow" />
           </a>
         </div>
       </div>
