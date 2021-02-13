@@ -1,27 +1,27 @@
 import React, { useEffect, useState } from "react";
 
 function Countdown() {
-    const getTimeLeft = () => {
-      const endtime = 'February 14 2021 00:00:00 GMT-0800'
-      const difference = Date.parse(endtime) - Date.parse(new Date());
-      let timeLeft = {
-        days: ('0' + Math.floor(difference / (1000 * 60 * 60 * 24))).slice(-2),
-        hours: ('0' + Math.floor((difference / (1000 * 60 * 60)) % 24)).slice(-2),
-        minutes: ('0' + Math.floor((difference / 1000 / 60) % 60)).slice(-2),
-        seconds: ('0' + Math.floor((difference / 1000) % 60)).slice(-2),
-      };
-
-      return timeLeft;
+  const getTimeLeft = () => {
+    const endtime = "February 17 2021 12:00:00 GMT-0800";
+    const difference = Date.parse(endtime) - Date.parse(new Date());
+    let timeLeft = {
+      days: ("0" + Math.floor(difference / (1000 * 60 * 60 * 24))).slice(-2),
+      hours: ("0" + Math.floor((difference / (1000 * 60 * 60)) % 24)).slice(-2),
+      minutes: ("0" + Math.floor((difference / 1000 / 60) % 60)).slice(-2),
+      seconds: ("0" + Math.floor((difference / 1000) % 60)).slice(-2),
     };
 
-    const [timeLeft, setTimeLeft] = useState(getTimeLeft());
+    return timeLeft;
+  };
 
-    useEffect(() => {
-      const tick = setInterval(() => setTimeLeft(getTimeLeft), 1000); 
-      return () => clearInterval(tick) 
-    });
+  const [timeLeft, setTimeLeft] = useState(getTimeLeft());
 
-  return(
+  useEffect(() => {
+    const tick = setInterval(() => setTimeLeft(getTimeLeft), 1000);
+    return () => clearInterval(tick);
+  });
+
+  return (
     <div className="flex flex-wrap justify-center items-start text-white text-shadow mb-8">
       <div className="flex flex-col ml-4 md:ml-0 mr-10 md:mr-4 font-bold">
         <h1 className="text-4xl sm:text-8xl">{timeLeft.days}</h1>
@@ -50,7 +50,7 @@ function Countdown() {
         <h4 className="text-xl">seconds</h4>
       </div>
     </div>
-  )
+  );
 }
 
 export default Countdown;
