@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 
 function Countdown() {
   const getTimeLeft = () => {
-    const endtime = "April 2 2021 12:00:00 GMT-0800";
+    const endtime = "April 16 2021 12:00:00 GMT-0800";
     const difference = Date.parse(endtime) - Date.parse(new Date());
     let timeLeft = {
       days: ("0" + Math.floor(difference / (1000 * 60 * 60 * 24))).slice(-2),
